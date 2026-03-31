@@ -1,0 +1,29 @@
+name = "blofin-paper"
+mode = "paper"
+venue = "blofin"
+asset_class = "crypto-perps"
+
+[api]
+rest_env = "BLOFIN_REST_BASE_URL"
+ws_public_env = "BLOFIN_WS_PUBLIC_URL"
+ws_private_env = "BLOFIN_WS_PRIVATE_URL"
+use_demo_env = "BLOFIN_USE_DEMO"
+
+[account]
+subaccount_required = true
+manual_trading_allowed = false
+
+[permissions]
+read_required = true
+trade_required = true
+transfer_required = false
+
+[execution]
+default_order_type = "limit"
+post_only_preferred = true
+cancel_replace_supported = true
+
+[risk]
+paper_only = true
+max_open_positions = 1
+

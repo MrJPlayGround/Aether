@@ -1,0 +1,13 @@
+mode = "paper"
+kill_switch_enabled = true
+max_open_positions = 1
+max_daily_loss = 0
+max_notional_per_trade = 0
+allow_live = false
+
+[guards]
+halt_on_stale_market_data = true
+halt_on_position_mismatch = true
+halt_on_order_reconciliation_failure = true
+halt_on_missing_credentials = true
+
