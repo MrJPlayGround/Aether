@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aether Client One-Pager</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    :root {
+      --bg: #071019;
+      --panel: #0d1724;
+      --panel-2: #101d2d;
+      --line: rgba(126, 173, 255, 0.14);
+      --text: #edf4fb;
+      --muted: #91a3b8;
+      --accent: #64e0c2;
+      --accent-2: #89b4ff;
+      --danger: #ff8c82;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 18mm 16mm 16mm;
+      background:
+        radial-gradient(circle at top left, rgba(100, 224, 194, 0.08), transparent 28%),
+        radial-gradient(circle at top right, rgba(137, 180, 255, 0.08), transparent 24%),
+        linear-gradient(180deg, #0b141f 0%, var(--bg) 100%);
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 10px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1, h2, h3, p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 31px;
+      line-height: 1.05;
+      max-width: 145mm;
+      margin-bottom: 12px;
+    }
+
+    .sub {
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--muted);
+      max-width: 145mm;
+    }
+
+    .hero-card {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .hero-card p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    .section h2 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-2);
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .card {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel);
+    }
+
+    .card h3 {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 8px 0 0 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 6px 0;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.45;
+    }
+
+    .three {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+
+    .package {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel-2);
+    }
+
+    .package .tier {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .package h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .package p {
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .footer {
+      margin-top: 18px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(100, 224, 194, 0.05);
+    }
+
+    .footer p {
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .danger {
+      color: var(--danger);
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="eyebrow">Aether / Private AI Trading Agent</div>
+    <h1>A private AI trading agent that remembers how you think.</h1>
+    <p class="sub">
+      Aether gives serious discretionary traders one private system for chat,
+      memory, desk state, journal capture, chart context, watchlist discipline,
+      tasks, and routines. It is decision support with continuity, not another
+      chat window that forgets everything overnight.
+    </p>
+
+    <div class="hero-card">
+      <p>
+        Most traders do not lose edge because they lack information. They lose
+        edge because their process fragments across screenshots, notes, chats,
+        and half-remembered reasoning. Aether keeps the desk narrative alive
+        across sessions so planning, execution, and reflection stop resetting.
+      </p>
+    </div>
+
+    <section class="section">
+      <h2>What The Client Actually Gets</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Chat-First Agent</h3>
+          <p>
+            Work with Aether through persistent threads and live conversation
+            instead of starting from scratch each session.
+          </p>
+          <ul>
+            <li>Discord / Telegram compatible workflow</li>
+            <li>Persistent thread continuity</li>
+            <li>High-context decision support</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Memory That Compounds</h3>
+          <p>
+            Desk state, journal entries, watchlist, and chart context stay
+            connected so the system becomes sharper with use.
+          </p>
+          <ul>
+            <li>Journal capture from threads</li>
+            <li>Related memory surfaced in context</li>
+            <li>Trading process preserved over time</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Live Desk Layer</h3>
+          <p>
+            Use the full control surface when you want the complete picture,
+            not just the chat layer.
+          </p>
+          <ul>
+            <li>Desk state and routines</li>
+            <li>Watchlist and task triage</li>
+            <li>Chart upload and attachment</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Trading-Serious Support</h3>
+          <p>
+            Aether is built to help structure context, invalidation, risk, and
+            review loops for discretionary trading.
+          </p>
+          <ul>
+            <li>Not a signals bot</li>
+            <li>Not auto-execution</li>
+            <li>Not generic AI chat</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Best Use Cases</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Morning Prep</h3>
+          <p>Set desk focus, bias, no-trade conditions, levels, and run a routine before the session begins.</p>
+        </div>
+        <div class="card">
+          <h3>Trade Idea Refinement</h3>
+          <p>Talk through setups with chart context, tighten invalidation, and keep the logic attached to the thread.</p>
+        </div>
+        <div class="card">
+          <h3>Journal Without Friction</h3>
+          <p>Turn live conversation into notes, reflections, or trade ideas while the thinking is still fresh.</p>
+        </div>
+        <div class="card">
+          <h3>Ongoing Process Discipline</h3>
+          <p>Keep watchlist, tasks, and desk posture honest instead of letting them drift across multiple tools.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Engagement Options</h2>
+      <div class="three">
+        <div class="package">
+          <div class="tier">Tier 1</div>
+          <h3>Private Agent</h3>
+          <p>One private Aether deployment for a serious trader who wants continuity, structure, and memory.</p>
+          <ul>
+            <li>Single-tenant deployment</li>
+            <li>Chat channel setup</li>
+            <li>Desk and memory configuration</li>
+          </ul>
+        </div>
+        <div class="package">
+          <div class="tier">Tier 2</div>
+          <h3>Premium Agent</h3>
+          <p>The same core product with deeper customization, tailored routines, and higher-touch support.</p>
+          <ul>
+            <li>Custom workflow tuning</li>
+            <li>Tailored routines and voice</li>
+            <li>Priority support</li>
+          </ul>
+        </div>
+        <div class="package">
+          <div class="tier">Tier 3</div>
+          <h3>White-Label Partnership</h3>
+          <p>A branded commercial deployment model for coaches, mentors, and boutique trading brands.</p>
+          <ul>
+            <li>Branding and identity layer</li>
+            <li>Managed branded deployments</li>
+            <li>Commercial licensing structure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p>
+        <strong>Best fit:</strong> discretionary traders, mentors, and boutique
+        operators who already take process seriously and want a private AI agent
+        that can hold context across sessions.
+      </p>
+      <p class="muted" style="margin-top: 8px;">
+        Decision support and operational memory only. <span class="danger">Aether does not execute trades or guarantee outcomes.</span>
+      </p>
+      <p style="margin-top: 10px;">
+        Contact: <strong>jay@nyxai.dev</strong>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
